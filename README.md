@@ -2,8 +2,7 @@
 
 This Bash script automates the process of running MTR (My Traceroute) diagnostics for one or more IP addresses. It performs multiple attempts to check the packet loss at the final destination for each IP and provides detailed reports.
 
-How It Works
-Input: The script accepts one or more IP addresses as command-line arguments.
+How It Works: The script accepts one or more IP addresses as command-line arguments.
 Retries: For each IP address, it performs up to 5 retries using mtr.
 Packet Loss Detection: It checks the final destination in the MTR report for packet loss:
 If any packet loss is detected, it prints the full MTR report for that IP.
