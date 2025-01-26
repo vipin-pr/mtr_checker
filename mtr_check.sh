@@ -29,7 +29,7 @@ while [ $count -le $MAX_RETRIES ]; do
     loss_percentage=$(echo "$final_line" | awk '{print $3}')
 
     #condition to check if the loss at final destination is not 0.0%
-    if [[ "$loss_percentage" != "0.0%" ]]; then
+    if [ "$loss_percentage" != "0.0%" ]; then
         echo -e "\nMTR Report - $ip - Attempt $count - Loss Found at $final_destination - $loss_percentage"
         echo "----------------------------"
         echo "$mtr_report"
